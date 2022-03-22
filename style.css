@@ -1,0 +1,202 @@
+*{
+	box-sizing: border-box;
+	cursor: url("./src/img/cursor.png"), auto;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+}
+@font-face{
+font-family: 'Bebas';
+src: url('./src/fonts/BebasNeuePro-ExpandedRegular.eot');
+src: url('./src/fonts/BebasNeuePro-ExpandedRegular.eot?#iefix') format('embedded-opentype'),
+url('./src/fonts/BebasNeuePro-ExpandedRegular.woff') format('woff'),
+url('./src/fonts/BebasNeuePro-ExpandedRegular.ttf') format('truetype'),
+url('./src/fonts/BebasNeuePro-ExpandedRegular.svg#svgwebfont') format('svg');
+font-weight: 300;
+font-style: normal;
+}
+
+@font-face{
+font-family: 'Bebas';
+src: url('./src/fonts/BebasNeuePro-ExpandedExtraBold.eot');
+src: url('./src/fonts/BebasNeuePro-ExpandedExtraBold.eot?#iefix') format('embedded-opentype'),
+url('./src/fonts/BebasNeuePro-ExpandedExtraBold.woff') format('woff'),
+url('./src/fonts/BebasNeuePro-ExpandedExtraBold.ttf') format('truetype'),
+url('./src/fonts/BebasNeuePro-ExpandedExtraBold.svg#svgwebfont') format('svg');
+font-weight: 800;
+font-style: normal;
+}
+
+
+.sec{
+  display: flex;
+  height: 100%;
+  background: #222;
+  color: #fff;
+}
+.blocks {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: 0.5s all ease;
+    z-index: 20;
+}
+.bgall {
+    height: 100%;
+    width: 100%;
+    filter: blur(1.5rem);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    background-position: center top;
+    background-size: cover;
+}
+.bg1{
+	background-image: url(./src/img/dcs-game.jpg); 
+}
+.bg2{
+	background-image: url(./src/img/bhop-css.jpg); 
+}
+.bg3{
+	background-image: url(./src/img/bhopgl.jpg); 
+}
+.showbg{
+  filter: blur(0.50px);
+  opacity: 1;
+  box-shadow: 0 0 80px #000;
+  transition: 0.5s all ease;
+}
+.infotxt {
+    z-index: 20;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bgtxttitle {
+    padding: 10px 40px;
+    font-size: 44px;
+    font-weight: 800;
+    margin: 5px;
+    font-family: bebas;
+    border: 6px solid;
+    border-left: 0;
+    border-right: 0;
+    transition: 0.5s all ease;
+}
+.showtitle{
+	background: #fff;
+	background: #ffffff38;
+}
+.bgtxtdesc {
+    font-family: roboto;
+    opacity: 0;
+    transition: 0.5s all ease;
+    font-size: 24px;
+    padding-top: 5px;
+    transform: scaleY(0);
+}
+.showdesc{
+    opacity: 1;
+    transform: scaleY(1);
+}
+#particles-js {
+    width: 100%;
+    height: inherit;
+    background-image: url(style.css);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background: rgb(15 15 15 / 75%);
+    position: absolute;
+    transition: 0.5s all ease;
+}
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 25;
+    padding: 0 44px;
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace;
+    z-index: 100;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.footer .title-footer {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    background: #ffffff1f;
+    padding: 5px 15px;
+}
+.footer ul {
+	display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.footer ul li {
+    margin-left: 40px;
+    background: #ffffff1f;
+    padding: 5px 15px;
+}
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#preloader {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 400;
+    color: #fff;
+}
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+ 
+  100%
+  {
+    transform: scale( 1 );
+  }
+}
+
+#preloader>img
+{
+  animation: heartbeat 2.5s infinite;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 25;
+    padding: 0 44px;
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace;
+    z-index: 100;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.server-status{
+	background: #ffffff1f;
+    padding: 5px 15px;
+}
